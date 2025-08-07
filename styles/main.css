@@ -1,0 +1,143 @@
+.section{
+}
+.text-header{
+ 
+}
+.menu_detali{
+   background-color: #5fa0e7f2; /* будь-який фон або градієнт */
+  display: flex;
+}
+
+.zalivka {
+   background-color: #ffcd60f2; /* будь-який фон або градієнт */
+}
+.kategoria {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.kategoria-cina{
+    display: flex;
+    flex-direction: column;
+}
+.img-cina{
+
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки однакової ширини */
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.img-section-akcia {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 колонки однакової ширини */
+  gap: 20px;
+  padding: 40px 0;
+}
+.kategoria-span{
+    padding-bottom: 10px;
+}
+.card-poizdki{
+    display: grid;
+  grid-template-columns: 1.6fr 1fr; /* 4 колонки однакової ширини */
+  padding: 40px 0;
+}
+.card-poizd {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+}
+
+.cardr {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Індивідуальні позиції в грід-сітці */
+.cruises {
+  grid-column: span 1;
+  background-image: url('../mala1.jpg');
+}
+
+.beach {
+  grid-column: span 2;
+  background-image: url('../mala2.webp');
+}
+
+.city {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-image: url('../tre.jpg');
+}
+
+.museum {
+  grid-column: span 1;
+  background-image: url('../cotr.jpg');
+}
+
+.food {
+  grid-column: span 1;
+  background-image: url('../pt.webp');
+}
+
+.hiking {
+  grid-column: span 1;
+  background-image: url('../fon.png');
+}
+
+/* Адаптація під мобільні пристрої */
+@media (max-width: 768px) {
+  .tour-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+  }
+
+  .city {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .beach {
+    grid-column: span 2;
+  }
+}
+
+
+
+
+
+
+.grid-bonus{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
